@@ -6,6 +6,35 @@
     <title>Clase 1 variables</title>
 </head>
 <body>
-    <script src="objects.js"></script>
+    <script>
+
+        function divisionEntera(dividendo, divisor){
+            if(dividendo < divisor){
+
+                return 0
+            }
+            return 1+divisionEntera(dividendo - divisor, divisor)
+        }
+
+        function factorial (n){
+            if(!this.cache){
+                this.cache
+            }
+
+            if (this.cache[n]){
+                return this.cache[n]
+            }
+
+            if (n===1){
+                return 1
+            }
+
+            this.cache[n]= n* factorial(n-1)
+            return this.cache[n]
+
+            return n*factorial(n-1)
+        }
+
+    </script>
 </body>
 </html>
